@@ -1,0 +1,7 @@
+
+label: "Metal Fabrication"
+kpis:
+  fpy_best_practice_pct: 97
+  supplier_otd_min_pct: 95
+  changeover_best_min: 10
+  carrying_cost_pct: 0.22

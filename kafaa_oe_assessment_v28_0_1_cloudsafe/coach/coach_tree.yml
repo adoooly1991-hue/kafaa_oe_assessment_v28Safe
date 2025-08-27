@@ -1,0 +1,156 @@
+
+stages:
+  - key: sourcing
+    title: "Sourcing & Procurement"
+    questions:
+      - id: supplier_otd
+        text: "Supplier on-time delivery (last 3 months, %)"
+        type: slider
+        min: 50
+        max: 100
+        value: 90
+        benchmark_key: supplier_otd_min_pct
+        map:
+          - cond: "< benchmark"
+            waste: "delivery"
+            score: 2
+  - key: inbound
+    title: "Inbound Logistics & Receiving"
+    questions:
+      - id: dock_wait_min
+        text: "Average truck dock wait time (minutes)"
+        type: number
+        value: 20
+        map:
+          - cond: ">30"
+            waste: "waiting"
+            score: 2
+      - id: incoming_fp
+        text: "Incoming inspection FPY (%)"
+        type: slider
+        min: 70
+        max: 100
+        value: 95
+        map:
+          - cond: "<98"
+            waste: "defects"
+            score: 2
+  - key: warehouse
+    title: "Warehouse & Storage"
+    questions:
+      - id: moh
+        text: "Average Months-on-Hand (MOH) for A items"
+        type: number
+        value: 4
+        map:
+          - cond: ">3"
+            waste: "inventory"
+            score: 2
+      - id: pick_accuracy
+        text: "Pick accuracy (%)"
+        type: slider
+        min: 80
+        max: 100
+        value: 96
+        map:
+          - cond: "<98"
+            waste: "defects"
+            score: 1
+  - key: internal
+    title: "Internal Logistics & Material Handling"
+    questions:
+      - id: touches
+        text: "Average touches/moves per unit between processes"
+        type: slider
+        min: 0
+        max: 10
+        value: 3
+        map:
+          - cond: ">4"
+            waste: "transportation"
+            score: 2
+      - id: aids
+        text: "Ergonomic aids available?"
+        type: select
+        options: ["No","Some","Yes"]
+        map:
+          - cond: "==No"
+            waste: "overprocessing"
+            score: 1
+  - key: production
+    title: "Production"
+    questions:
+      - id: ct_bn
+        text: "Bottleneck cycle time (seconds)"
+        type: number
+        value: 70
+      - id: takt
+        text: "Takt time (seconds)"
+        type: number
+        value: 60
+        map:
+          - cond: "ct_bn > takt"
+            waste: "waiting"
+            score: 2
+      - id: changeover_min
+        text: "Typical changeover time (minutes)"
+        type: number
+        value: 45
+        map:
+          - cond: ">30"
+            waste: "waiting"
+            score: 1
+      - id: fpy_line
+        text: "Line First Pass Yield (%)"
+        type: slider
+        min: 70
+        max: 100
+        value: 96
+        map:
+          - cond: "< benchmark_fpy"
+            waste: "defects"
+            score: 2
+  - key: maintenance
+    title: "Maintenance & Equipment Care"
+    questions:
+      - id: oee
+        text: "OEE (%) on constraint machine"
+        type: slider
+        min: 40
+        max: 100
+        value: 65
+        map:
+          - cond: "<75"
+            waste: "waiting"
+            score: 1
+      - id: breakdown_mtbf
+        text: "MTBF (hours) on constraint machine"
+        type: number
+        value: 500
+        map:
+          - cond: "< mtbf_goal"
+            waste: "waiting"
+            score: 1
+  - key: outbound
+    title: "Outbound & Shipping"
+    questions:
+      - id: ship_otd
+        text: "Customer OTD (%)"
+        type: slider
+        min: 60
+        max: 100
+        value: 92
+        map:
+          - cond: "<95"
+            waste: "delivery"
+            score: 2
+      - id: returns_pct
+        text: "Returns/complaints (% of shipments)"
+        type: slider
+        min: 0
+        max: 10
+        value: 2
+        map:
+          - cond: ">3"
+            waste: "defects"
+            score: 1

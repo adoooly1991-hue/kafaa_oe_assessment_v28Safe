@@ -1,0 +1,143 @@
+{
+  "brand_mode": "co_brand",
+  "client": {
+    "name_en": "Serb Advanced Industries",
+    "logo": "assets/serb.png"
+  },
+  "engagement": {
+    "site": "Riyadh",
+    "date": "2025-08-27",
+    "confidentiality": "Confidential"
+  },
+  "financials": {
+    "target_profit_sar": 7200000,
+    "cost_reduction_target_sar": 3600000,
+    "revenue_sar": 38500000
+  },
+  "product_selection": {
+    "champion": "VT-Alpha (Surveillance UAS)",
+    "series": [
+      {
+        "label": "Sales Value (SAR M)",
+        "x": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "y": [
+          7.5,
+          8.3,
+          9.1,
+          9.8
+        ]
+      },
+      {
+        "label": "Sales Volume (Units)",
+        "x": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "y": [
+          18,
+          22,
+          25,
+          27
+        ]
+      }
+    ]
+  },
+  "vsm": {
+    "current": {
+      "touch_points": 22,
+      "lead_time_days": 68,
+      "va_pct": 0.42
+    },
+    "future": {
+      "touch_points": 16,
+      "lead_time_days": 44,
+      "va_pct": 0.58
+    },
+    "ideal": {
+      "touch_points": 8,
+      "lead_time_hrs": 16,
+      "va_pct": 0.65
+    }
+  },
+  "muda": {
+    "raw_count": 96,
+    "ecrs_final": 19,
+    "quantification": {
+      "waterfalls": {
+        "cost": [
+          {
+            "label": "Now",
+            "value": 1200000
+          },
+          {
+            "label": "Next",
+            "value": 900000
+          },
+          {
+            "label": "Later",
+            "value": 650000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ],
+        "cash": [
+          {
+            "label": "A",
+            "value": 2200000
+          },
+          {
+            "label": "B",
+            "value": 1300000
+          },
+          {
+            "label": "C",
+            "value": 600000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ],
+        "lost_opportunity": [
+          {
+            "label": "CT gaps",
+            "value": 5400000
+          },
+          {
+            "label": "Changeover",
+            "value": 1250000
+          },
+          {
+            "label": "Quality",
+            "value": 850000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ]
+      }
+    }
+  },
+  "images": {
+    "gemba": []
+  },
+  "assumptions": [
+    "Two 8h shifts",
+    "Defense-grade QA procedures",
+    "Serialized traceability"
+  ],
+  "disclaimer_en": "This report is based on client-provided data and controlled shopfloor observations."
+}

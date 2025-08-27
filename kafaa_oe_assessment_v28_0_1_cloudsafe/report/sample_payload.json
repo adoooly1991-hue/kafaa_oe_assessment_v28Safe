@@ -1,0 +1,138 @@
+{
+  "brand_mode": "kafaa",
+  "client": {
+    "name_en": "Serb Advanced Industries",
+    "logo": "assets/serb.png"
+  },
+  "financials": {
+    "target_profit_sar": 6700000,
+    "cost_reduction_target_sar": 3200000,
+    "revenue_sar": 30900000
+  },
+  "product_selection": {
+    "champion": "ICE-125ml",
+    "series": [
+      {
+        "label": "Sales Value",
+        "x": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "y": [
+          2.1,
+          2.6,
+          2.4,
+          3.0
+        ]
+      },
+      {
+        "label": "Sales Volume",
+        "x": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "y": [
+          400,
+          520,
+          460,
+          610
+        ]
+      }
+    ]
+  },
+  "vsm": {
+    "current": {
+      "touch_points": 18,
+      "lead_time_days": 246,
+      "va_pct": 0.4
+    },
+    "future": {
+      "touch_points": 13,
+      "lead_time_days": 172,
+      "va_pct": 0.58
+    },
+    "ideal": {
+      "touch_points": 3,
+      "lead_time_hrs": 2,
+      "va_pct": 0.5
+    }
+  },
+  "muda": {
+    "raw_count": 110,
+    "ecrs_final": 13,
+    "quantification": {
+      "waterfalls": {
+        "cost": [
+          {
+            "label": "Now",
+            "value": 800000
+          },
+          {
+            "label": "Next",
+            "value": 900000
+          },
+          {
+            "label": "Later",
+            "value": 300000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ],
+        "cash": [
+          {
+            "label": "A",
+            "value": 2000000
+          },
+          {
+            "label": "B",
+            "value": 1400000
+          },
+          {
+            "label": "C",
+            "value": 500000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ],
+        "lost_opportunity": [
+          {
+            "label": "CT gaps",
+            "value": 4500000
+          },
+          {
+            "label": "Changeover",
+            "value": 900000
+          },
+          {
+            "label": "Quality",
+            "value": 600000
+          },
+          {
+            "label": "Total",
+            "value": 0,
+            "measure": "total"
+          }
+        ]
+      }
+    }
+  },
+  "images": {
+    "gemba": []
+  },
+  "assumptions": [
+    "8h shift, 5d/week",
+    "SAR currency",
+    "Lead time excludes weekends"
+  ],
+  "disclaimer_en": "This report is based on client-provided data and observations during Gemba walks."
+}

@@ -1,0 +1,15 @@
+
+label: "Defense • Unmanned Systems"
+kpis:
+  fpy_best_practice_pct: 99.5
+  supplier_otd_min_pct: 98
+  changeover_best_min: 15
+  traceability_leadtime_days: 1
+  mtbf_hours_goal: 3000
+  esd_compliance: true
+  mission_config_time_min: 5
+  software_release_lead_time_days: 14
+  carrying_cost_pct: 0.20
+  documentation_first_time_right_pct: 98
+notes: >
+  Critical quality & traceability environment. Emphasize FPY, MTBF, and software-hardware integration flow.

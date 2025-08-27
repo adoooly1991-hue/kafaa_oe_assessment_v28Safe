@@ -1,0 +1,42 @@
+
+template: "assets/Kafaa_Template.pptx"
+brand_mode: "kafaa"   # kafaa | co_brand | white_label
+slides:
+  - id: cover
+    type: cover
+  - id: exec
+    type: executive_summary
+  - id: agenda
+    type: agenda
+    bullets:
+      - "Executive summary"
+      - "About the factory"
+      - "Assessment methodology"
+      - "Financial targets"
+      - "Champion product selection"
+      - "VSM — Current / Future / Ideal"
+      - "Observations (PQCDSM)"
+      - "Impact waterfalls"
+      - "Assumptions & Disclaimer"
+  - id: methodology
+    type: methodology
+  - id: financials
+    type: financials
+  - id: selection
+    type: product_selection
+  - id: vsm_summary
+    type: vsm_summary
+  - id: waterfalls
+    type: waterfalls_trio
+  - id: ecrs
+    type: ecrs_funnel
+  - id: photos
+    type: photos_grid
+  - id: assumptions
+    type: assumptions
+  - id: disclaimer
+    type: disclaimer
+  - id: signoff
+    type: signoff
+  - id: appendix
+    type: appendix_obs

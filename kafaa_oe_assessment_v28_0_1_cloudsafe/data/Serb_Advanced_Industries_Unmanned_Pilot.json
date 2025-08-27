@@ -1,0 +1,168 @@
+{
+  "client_name": "Serb Advanced Industries",
+  "project_name": "Unmanned Systems VSM Pilot",
+  "factory_name": "Serb Assembly & Integration Center",
+  "year": 2025,
+  "profile_key": "defense_unmanned",
+  "financials_revenue": 62000000.0,
+  "financials_cogs": 40200000.0,
+  "financials_ga": 7200000.0,
+  "financials_dep": 2300000.0,
+  "financials_finexp": 1300000.0,
+  "financials_inventory": 11500000.0,
+  "current_assets": 22000000.0,
+  "current_liabilities": 10400000.0,
+  "sales_target": 70000000.0,
+  "bud_cogs": 39000000.0,
+  "bud_ga": 7000000.0,
+  "bud_dep": 2200000.0,
+  "bud_finexp": 1200000.0,
+  "target_profit": 9500000.0,
+  "carrying_rate_pct": 22.0,
+  "shift_sec": 28800,
+  "demand_per_shift": 420,
+  "takt_sec": 68.57142857142857,
+  "abc_A_pct": 55.0,
+  "abc_B_pct": 30.0,
+  "abc_C_pct": 15.0,
+  "abc_A_carry_pct": 18.0,
+  "abc_B_carry_pct": 22.0,
+  "abc_C_carry_pct": 26.0,
+  "coach_mode_results": {
+    "production": {
+      "title": "Production",
+      "answers": {
+        "ct_bn": 78,
+        "takt": 68.57142857142857,
+        "fpy_line": 97.8,
+        "changeover_min": 48
+      }
+    }
+  },
+  "observations": [
+    {
+      "section": "Production",
+      "title": "Pacemaker & buffers",
+      "text": "Assembly CT averages 78s vs takt 68.6s, creating pre-test buffers and forklift touches. Flow is push in upstream machining and pull-based at final test.",
+      "measured_count": 3,
+      "inferred_count": 2
+    },
+    {
+      "section": "Quality",
+      "title": "First-pass yield",
+      "text": "Line FPY at 97.8% vs defense benchmark 99.5%. Primary issues: EMI noise on avionics harness and gimbal alignment drift.",
+      "measured_count": 2,
+      "inferred_count": 2
+    },
+    {
+      "section": "Safety",
+      "title": "ESD & handling",
+      "text": "ESD discipline inconsistent during kitting and harness routes; gloves and mats missing in 2 of 5 checks. Material lifts exceed single-operator standard for airframes.",
+      "measured_count": 2,
+      "inferred_count": 1
+    }
+  ],
+  "countermeasures_df": {
+    "__type__": "dataframe",
+    "columns": [
+      "title",
+      "owner",
+      "due",
+      "impact",
+      "effort",
+      "annual_savings_sar"
+    ],
+    "data": [
+      [
+        "SMED on payload swap",
+        "Ops",
+        "2025-10-15",
+        82,
+        44,
+        1400000
+      ],
+      [
+        "Kanban & supermarkets (A-class)",
+        "Supply",
+        "2025-09-20",
+        68,
+        35,
+        750000
+      ],
+      [
+        "Poka-yoke for harness EMI",
+        "Quality",
+        "2025-08-31",
+        58,
+        28,
+        420000
+      ]
+    ]
+  },
+  "product_table": {
+    "__type__": "dataframe",
+    "columns": [
+      "Product",
+      "CostPerUnit",
+      "ProfitPerUnit",
+      "MarginPerUnit",
+      "TotalSales",
+      "Quantity",
+      "ManufacturingTimeHr",
+      "TouchPoints"
+    ],
+    "data": [
+      [
+        "Recon Drone MkII",
+        4800,
+        1500,
+        1500,
+        11800000,
+        1950,
+        3.9,
+        13
+      ],
+      [
+        "EO/IR Gimbal X",
+        1900,
+        780,
+        780,
+        7200000,
+        3600,
+        1.3,
+        8
+      ],
+      [
+        "Battery Pack Pro",
+        520,
+        180,
+        180,
+        4400000,
+        8500,
+        0.6,
+        6
+      ],
+      [
+        "Control Unit v4",
+        3000,
+        980,
+        980,
+        9400000,
+        2300,
+        2.7,
+        11
+      ],
+      [
+        "Airframe Carbon",
+        4300,
+        1200,
+        1200,
+        8600000,
+        2000,
+        3.3,
+        14
+      ]
+    ]
+  },
+  "champion_product": "Recon Drone MkII"
+}

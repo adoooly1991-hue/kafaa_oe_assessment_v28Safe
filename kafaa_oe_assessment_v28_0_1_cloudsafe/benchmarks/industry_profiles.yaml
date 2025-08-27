@@ -1,0 +1,38 @@
+
+profiles:
+  general_manufacturing:
+    changeover_best_min: 10
+    fpy_best: 98.0
+    oee_good: 75.0
+    wip_turns_target: 18
+    inventory_days_target: 30
+    on_time_delivery_target: 95.0
+    rework_rate_target: 2.0
+    safety_incidents_target: 0
+  metal_fabrication:
+    changeover_best_min: 12
+    fpy_best: 97.0
+    oee_good: 72.0
+    wip_turns_target: 14
+    inventory_days_target: 35
+    on_time_delivery_target: 93.0
+    rework_rate_target: 3.0
+    safety_incidents_target: 0
+  electronics_assembly:
+    changeover_best_min: 8
+    fpy_best: 99.3
+    oee_good: 80.0
+    wip_turns_target: 22
+    inventory_days_target: 21
+    on_time_delivery_target: 97.0
+    rework_rate_target: 1.0
+    safety_incidents_target: 0
+  defense_unmanned_systems:
+    changeover_best_min: 15
+    fpy_best: 99.0
+    oee_good: 70.0
+    wip_turns_target: 10
+    inventory_days_target: 60
+    on_time_delivery_target: 98.0
+    rework_rate_target: 0.5
+    safety_incidents_target: 0
